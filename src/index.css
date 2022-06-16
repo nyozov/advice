@@ -39,3 +39,32 @@ code {
   max-width: 500px;
   text-align: center;
 }
+
+.advice_svg {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: medium;
+}
+
+.advice_svg .svg_background {
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  padding: 15px;
+  border-radius: 100%;
+  margin-bottom: -41px;
+  cursor: pointer;
+}
+
+.advice_svg .svg_background:hover {
+  box-shadow: 0px 0px 15px hsl(150, 100%, 66%);
+}
+
+.advice_box .divider {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 2rem;
+}
