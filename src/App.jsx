@@ -1,10 +1,12 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
-import Loading from "./Loading";
-import DiceLoader from "./DiceLoader";
+import axios from "axios";
+import Loading from "./components/Loading";
+import DiceLoader from "./components/DiceLoader";
+
 function App() {
   const [advice, setAdvice] = useState({});
   const [loading, setLoading] = useState(false);
+
   const fetchAdvice = async () => {
     setLoading(true);
     const response = await axios.get("https://api.adviceslip.com/advice");
@@ -12,7 +14,6 @@ function App() {
       setAdvice(response.data.slip);
     }, 2000);
 
-    console.log(response.data.slip);
     setTimeout(() => {
       setLoading(false);
     }, 2000);

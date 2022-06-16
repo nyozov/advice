@@ -1,4 +1,4 @@
-import loaderIcon from "./assets/icon-2s-47px.gif";
+import loaderIcon from "../assets/icon-2s-47px.gif";
 
 function Loading() {
   return (
